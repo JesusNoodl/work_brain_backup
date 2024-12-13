@@ -1,0 +1,14 @@
+Electricity data is a Scope 2 indirect emission with emissions being calculated using the national grid average factor. The sources for this data are:
+- Supplier reports
+	- These are usually from EDF as BAM UK have a supplier agreement with them. Currently Debbie Sheers looks after the Digital Energy software which produces the reports we need. As this software hold the half hourly data collected by the meters and data loggers many reports can be produced from it.
+	- In [[Ireland]] their main supplier is Energiea which the vast majority of reports come from although there are the odd supply coming through Flo Gas, Electric Ireland and Airticity.
+- Invoice Data
+	- Although BAM UK have a supplier agreement with EDF some sites will still procure energy with other suppliers. These should be highlighted to Debbie Sheers so that they can organise the supply to be taken over by EDF. This information is held in our invoicing system which is the BASWARE system for the UK and COINS for Ireland.
+- Site Reports
+	- Sites will have to report on any meters that BAM UK&I do not have direct procurement of but we still use for our operations. Situations like this are: landlord owned energy supplies, free issue meter’s and shared offices. To report this information sites will use their respective [[site reporting tool]] to upload monthly meter readings.
+- JVs
+	- Due to the size of JVs and whether BAM is lead procurement we may not be able to have the site use our systems to report information. Therefore JVs are all treat differently depending on their capabilities. As this changes from project to project refer to the [[JV data sources]] page.
+
+With [[BAM UK&I]] operating over two nations different emissions factors have to be used to calculated their carbon footprint. For the UK ([[Civils]], [[Ventures]] and [[Construction]]) the UK Gov data set supplied by the [Department for Energy Security & Net Zero](https://www.gov.uk/government/organisations/department-for-energy-security-and-net-zero) with all current and historic dataset found [here](https://www.gov.uk/government/collections/government-conversion-factors-for-company-reporting). In Ireland they have the Government department called the Sustainable Energy Authority of Ireland and their conversion factors are uploaded [here](https://www.seai.ie/data-and-insights/seai-statistics/conversion-factors/). 
+
+In the UK we have improved on the yearly average factors supplied by DESNZ by using the free API supplied by the National grid to get day average carbon factors. The API under the project [Carbon Intensity](https://www.carbonintensity.org.uk/) and is a collaboration between National Grid ESO and other charity and academic bodies. This API also uses machine learning to predict the carbon intensity of the grid in the future.
